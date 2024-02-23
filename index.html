@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <form action="">
+
+                <h2>
+                    Login
+                </h2>
+          
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input id="user" type="email" placeholder="Email..." name="username" required />
+                    <label>Email</label>
+                </div>
+          
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input id="pass" type="password" placeholder="Password..." name="password" autocomplete="new-password" required /><br>
+                    <label>Password</label>
+                </div>
+          
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me </label>
+                    <a href="#">    &nbsp; Forgot Password?</a> 
+                </div>
+          
+                <input type="button" value="login" name="login" onclick="sign()" class="btn" />
+          
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+  name='yosf@gmail.com';
+  passw='12345'
+  function sign(){
+    user = document.getElementById('user').value;
+    pass = document.getElementById('pass').value;
+
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailRegex.test(user) && pass == passw) {
+        window.location.href='ls/mainpage.html';
+    } else {
+        alert(`البريد الإلكتروني أو كلمة المرور غير صالحة. يجب أن يكون البريد الإلكتروني يحتوي على "@" .`);
+    }
+  }
+</script>
+</html>

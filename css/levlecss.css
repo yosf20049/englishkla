@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f8f8f8;
+    margin-top: 95px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+
+}
+
+.card {
+    height: 120px;
+    width: 97%;
+    background-color: #aca7a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 15px;
+    padding: 0 10px;
+    border-left: 10px solid #b82a2a; /* حافة على اليسار */
+    border-right: 10px solid #b82a2a; /* حافة على اليمين */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    
+}
+
+.title-left, .title-right {
+    margin: 0;
+    
+}
+
+.title-left {
+    font-size: 24px;
+}
+
+.title-right {
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-color-light: rgb(50, 43, 159);
+    --primary-color-dark: rgb(34, 34, 34);
+    --secondary-color-light: rgb(215, 97, 182);
+    --secondary-color-dark: rgb(169, 169, 169);
+    --background-light: #f8f8f8;
+    --background-dark: #111;
+    --text-color-light: rgb(44, 74, 180);
+    --text-color-dark: #ffffff;
+}
+
+
+body.dark-mode {
+    background-color:black;
+    color: black ;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 6% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--primary-color-light);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sub-pages {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgb(92, 92, 245); /* لون الخلفية */
+color: rgb(215, 97, 182); /* لون النص */
+padding: 5px 0;
+text-align: center;
+}
+
+.sub-pages a {
+color: #333; /* لون الروابط */
+text-decoration: none;
+margin: 0 35px;
+font-size: 1rem;
+}
+
+.sub-pages a:hover {
+color: rgb(215, 97, 182); /* لون الروابط عند التحويم */
+}
+
+header.dark-mode {
+    background-color: black;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 15px;
+    padding: 15px;
+    color: var(--background-light);
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header.dark-mode nav a {
+    color: var(--primary-color-dark);
+}
+
+header nav a:hover {
+    color: var(--secondary-color-light);
+    border-bottom: var(--secondary-color-light) solid 3px;
+}
+
+header.dark-mode nav a:hover {
+    color: var(--secondary-color-dark);
+    border-bottom: var(--secondary-color-dark) solid 3px;
+}
+
+.icon a {
+    font-size: 1.5rem;
+    color: var(--secondary-color-light);
+    margin-right: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.icon.dark-mode a {
+    color: var(--secondary-color-dark);
+}
+
+.icon a:hover {
+    color: red;
+}
+
+.icon.dark-mode a:hover {
+    color: red;
+}
+
+section {
+    padding: 4% 6%;
+    margin-top: 80px; /* Adjusted margin-top to accommodate the fixed header */
+}
+
+.home {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home content h4 {
+    font-size: 5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--text-color-light);
+    margin-bottom: 10px;
+}
+
+.home content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary-color-light);
+}
+
+.content p {
+    font-size: 1rem;
+    color: var(--secondary-color-light);
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 20px 0 45px;
+}
+
+/* تحسين الكارت ليكون متجاوب */
+
+
+/* توسيع العنوان في حالة الجوال */
+@media only screen and (max-width: 600px) {
+    .title-left {
+        font-size: 20px;
+    }
+
+    .title-right {
+        font-size: 14px;
+    }
+}
+
+/* تعديل الهامش العلوي ليتناسب مع الهيدر الثابت */
+@media only screen and (max-width: 768px) {
+    section {
+        margin-top: 120px;
+    }
+}
+
+/* تعديلات إضافية حسب الحاجة لتحسين الاستجابة */
+
+
+
+
+
+
+
+
+

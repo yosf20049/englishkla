@@ -1,0 +1,85 @@
+
+body{
+  background-color:#a6cae3;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+
+
+}
+td{
+  text-align: center;
+}
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+tr:hover {background-color: RGBA(145,145,145,0.31);}
+.u-section-2 .u-sheet-1 {
+  min-height: 645px;
+}
+.u-section-2 .u-text-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 606px;
+  margin: 60px auto 0;
+}
+.u-section-2 .u-line-1 {
+  width: 50px;
+  height: 0;
+  margin: 9px auto 0;
+}
+.u-section-2 .u-text-2 {
+  font-weight: 700;
+  line-height: 1.6;
+  width: 288px;
+  margin: 9px auto 0;
+}
+.u-section-2 .u-text-3 {
+  line-height: 2;
+  font-size: 1.125rem;
+  width: 1100px;
+  margin: 20px auto 2px;
+}
+@media (max-width: 1199px) {
+  .u-section-2 .u-text-1 {
+    width: 606px;
+  }
+  .u-section-2 .u-text-2 {
+    width: 288px;
+  }
+}
+@media (max-width: 1150px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 678px;
+  }
+  .u-section-2 .u-text-1 {
+    font-size: 2rem;
+    width: auto;
+  }
+  .u-section-2 .u-text-3 {
+    width: 540px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 703px;
+  }
+  .u-section-2 .u-text-3 {
+    width: 340px;
+    margin-bottom: 60px;
+  }
+}
